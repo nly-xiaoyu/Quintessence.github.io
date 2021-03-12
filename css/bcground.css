@@ -1,0 +1,8 @@
+.bcground{
+	background-image: url(../img/bcground.png);
+	background-size: cover;
+	z-index: -20;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+}

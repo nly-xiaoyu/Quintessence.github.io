@@ -1,0 +1,728 @@
+
+.dance{
+	margin: 0px;
+	overflow: hidden;
+	width: 100%;
+	height: 85vw;
+
+}
+.dance #divide{
+	height: 4vw;
+	background-color: #000;
+}
+.dance #dance-title{
+	position: relative;
+	float: left;
+	top: 5vw;
+	left: 7.5vw;
+	padding-bottom: 0.6vw;
+	text-align: center;
+	border-bottom: 0.3vw solid #000;	
+}
+.dance #dance-title span{
+	color: #000;
+	font-family: '黑体';
+	font-size: 3.5vw;
+}
+.dance #dance-line{
+	position: absolute;
+	left: 80vw;
+	top: 80vw;
+	width: 0.5vw;
+	height: 22vw;
+	background-color: #fff;
+	z-index: 11;
+}
+.dance #dance-log{
+	position: absolute;
+	overflow: hidden;
+	float: left;
+	left: 78vw;
+	top: 71vw;
+	width: 16vw;
+	height: 54vw;
+	z-index: 12;
+}
+.dance #dance-log img{
+	width: 100%;
+	height: 100%;
+}
+
+.paper1{
+	position: relative;
+	top: 22vw;
+	left: -1vw;
+	width: 100vw;
+	height: 20vw;
+	background-color: #ca463b;;
+	border: 0.8vw solid #000;
+	transform: rotateZ(-20deg);
+	z-index: 9;
+}
+.paper2{
+	position: relative;
+	float: left;
+	padding: 0px;
+	top: -1.5vw;
+	left: -4vw;
+	width: 120vw;
+	height: 40vw;
+	background-color: #c23128;
+	transform: rotateZ(4deg);
+}
+#pic02{
+	position: relative;
+	float: left;
+	width: 32vw;
+	top: -13vw;
+	left: 30vw;
+	transform: rotateZ(16deg);
+	z-index: 10;
+	transition-delay: 300ms;
+}
+#pic02 > img{
+	width: 100%;
+	height: 100%;
+	box-shadow: -0.6vw -0.6vw 5px #5a0404;
+	transition-delay: 300ms;
+}
+#pic04{
+	position: relative;
+	float: left;
+	width: 32vw;
+	top: 2.2vw;
+	left: 12vw;
+	transform: rotateZ(16deg);
+	z-index: 1;
+	transition-delay: 300ms;
+}
+#pic04 > img{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);
+	box-shadow: -5px -5px 5px #5a0404;
+	transition-delay: 300ms;
+
+}
+.dance-text{
+	position: relative;
+	top: -33vw;
+	left: 2.5vw;
+	float: left;
+	transform: rotateZ(20deg)
+}
+.dance-text p{
+	font-size: 2.2vw;
+	font-family: '黑体';
+	color: #fff;
+}
+/**
+ *音乐舞美
+ *  
+ */
+.music{
+	margin: 0px;
+	width: 100%;
+	height: 78vw;
+
+}
+.paper3{
+	position: relative;
+	float: right;
+	width: 48vw;
+	height: 48vw;
+	background-color: #c23128;
+}
+.pic01-pane{
+	position: relative;
+	left: -11vw;
+	top: -11vw;
+	width: 55vw;
+	height: 50vw;
+}
+.pic01-pane img{
+	width: 100%;
+	height: 100%；
+}
+#pic01{
+	position: relative;
+	overflow: hidden;
+	top: -52.55vw;
+	left: -3.8vw;
+	float: left;
+	width: 28.8vw;
+	height: 24.75vw;
+}
+#pic01 img{
+	height: 100%;
+}
+.music #music-log{
+	position: relative;
+	float: left;
+	top: -33vw;
+	left: 3.8vw;
+	width: 95vw;
+}
+.music #music-log img{
+	width: 100%;
+	height: 100%;
+}
+.music #music-slidedown{
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	top: -54vw;
+	left: 50.8vw;
+	text-align: center;
+	width: 48vw;
+	height: 10vw;
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;  /* Safari and Chrome */
+	-moz-animation: bounce 2s infinite; /* Firefox*/
+	-o-animation: bounce 2s infinite; /*Opera*/
+}
+
+/*下拉图标的动画效果*/
+@keyframes bounce
+{
+	0% {top:-54vw;}
+	25% {top: -56vw;}
+	50% {top: -55vw;}
+	75% {top: -56vw;}
+	100% {top: -54vw;}
+}
+
+@-webkit-keyframes bounce /* Safari and Chrome */
+{
+	0% {top:-54vw;}
+	25% {top: -56vw;}
+	50% {top: -55vw;}
+	75% {top: -56vw;}
+	100% {top: -54vw;}
+}
+
+@-moz-keyframes bounce  /* Firefox*/
+{
+	0% {top:-54vw;}
+	25% {top: -56vw;}
+	50% {top: -55vw;}
+	75% {top: -56vw;}
+	100% {top: -54vw;}
+}
+
+@-o-keyframes bounce /*Opera*/
+{
+	0% {top:-54vw;}
+	25% {top: -56vw;}
+	50% {top: -55vw;}
+	75% {top: -56vw;}
+	100% {top: -54vw;}
+}
+
+.music #music-slidedown img{
+	height: 100%;
+}
+.music #music-content{
+	position: relative;
+	float: right;
+	top: -54vw;
+	width: 48vw;
+	height: 42vw;
+	background-color: #c92d25;
+	z-index: 20;
+	display: none;
+}
+.music #music-content #music-text{
+	position: relative;
+	padding: 3vw 0 0 6vw;
+	width: 42vw;
+	height: 33.5vw;
+}
+.music #music-content #music-text p{
+	display: inline;
+	line-height: 3vw;
+	font-size: 2.2vw;
+	font-family: '黑体';
+	color: #fff;
+}.music #music-content #music-slideup{
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 48vw;
+	height: 10vw;
+	animation: switch 2s infinite;
+	-webkit-animation: switch 2s infinite;  /* Safari and Chrome */
+	-moz-animation: switch 2s infinite; /* Firefox*/
+	-o-animation: switch 2s infinite; /*Opera*/
+}
+
+/*上拉图标动画效果*/
+@keyframes switch
+{
+	0% {top: 0vw;}
+	25% {top: -2vw;}
+	50% {top: -1vw;}
+	75% {top: -2vw;}
+	100% {top: 0vw;}
+}
+
+@-webkit-keyframes switch /* Safari and Chrome */
+{
+	0% {top: 0vw;}
+	25% {top: -2vw;}
+	50% {top: -1vw;}
+	75% {top: -2vw;}
+	100% {top: 0vw;}
+}
+
+@-moz-keyframes switch  /* Firefox*/
+{
+	0% {top: 0vw;}
+	25% {top: -2vw;}
+	50% {top: -1vw;}
+	75% {top: -2vw;}
+	100% {top: 0vw;}
+}
+
+@-o-keyframes switch /*Opera*/
+{
+	0% {top: 0vw;}
+	25% {top: -2vw;}
+	50% {top: -1vw;}
+	75% {top: -2vw;}
+	100% {top: 0vw;}
+}
+
+.music #music-content #music-slideup img{
+	height: 100%;
+}
+/**
+ *剧种概括
+ *  
+ */
+.types{
+	position: relative;
+	width: 100%;
+	height: 82vw;
+	background-color: #ca463b;
+}
+
+/*剧种概况标题*/
+.types-title{
+	position: absolute;
+	top: 10vw;
+	left: 89vw;
+	width: 7.8vw;
+	height: 7.8vw;
+	border-left: 0.3vw solid #000;
+}
+.types-title div{
+	position: relative;
+	float: left;
+	display: block;
+	text-align: center;
+	line-height: 3.9vw;
+	width: 3.9vw;
+	height: 3.9vw;
+}
+.types-title div span{
+	font-size: 3.5vw;
+	font-family: '黑体';
+	color: #000;
+}
+
+/*剧种概括黑色框*/
+.types-box{
+	position: absolute;
+	top: 19.3vw;
+	left: 16.5vw;
+	width: 67vw;
+	height: 32.5vw;
+	border: 1vw solid #000;	
+}
+.types-box >div{
+	position: absolute;
+	left: 38.1vw;
+	width: 28.9vw;
+	height: 32.5vw;
+	z-index: 13;
+	display: none;
+}
+.types-box p{
+	position: relative;
+	display: inline;
+	top: 3vw;
+	left: 3vw;
+	line-height: 3vw;
+	font-size: 2.3vw;
+	font-family: '黑体';
+	color: #fff;
+}
+.types-box #drama-total{
+	position: absolute;
+	display: block;
+	float: right;
+	width: 28.9vw;
+	height: 32.5vw;
+	background-color: #ca463b;
+}
+.types-box #drama-total span{
+	font-size: 2.4vw;
+	font-family: '黑体';
+	color: #000;
+	padding-bottom: 0.2vw;
+	border-bottom: 0.2vw solid #000;
+	cursor: pointer;
+}
+.types-box #drama-total >div{
+	position: relative;
+	float: left;
+	margin: 0 2vw 1vw 0;
+	line-height: 5vw;
+	top: 6vw;
+	left: 5vw;
+	width: 10vw;
+	height: 5vw;
+	transition-delay: 0.3s;
+}
+.types-box #drama-total >div:hover span{
+	color: #fff;
+	border-bottom: 0.2vw solid #fff;
+}
+
+/*剧种概括中间的大图*/
+.pic03{
+	position: absolute;
+	float: left;
+	top: 11.5vw;
+	width: 55.6vw;
+	height: 37.2vw;
+}
+.pic03 img{
+	width: 100%;
+}
+
+/*剧种概括右边的圆形按钮*/
+.types #box-button{
+	position: absolute;
+	top: 38vw;
+	left: 85vw;
+	width: 7vw;
+	height: 7vw;
+}
+
+.types #box-button img{
+	width: 170%;
+}
+.types #box-button img:hover{
+	opacity: 0.6;
+}
+
+/*剧种概括右下角的黑色矩形框*/
+.types-panel{
+	position: absolute;
+	top: 65vw;
+	left: 56vw;
+	width: 40vw;
+	height: 12.7vw;
+	text-align: center;
+	line-height: 11vw;
+	border: 0.8vw solid #000;
+}
+.types-panel span{
+	font-family: OswaldStencil;
+	font-size: 6.5vw;
+	color: #fff;
+}
+
+/*剧种概括右下角的白色横线*/
+.types-line{
+	position: absolute;
+	top: 76vw;
+	left: 27.1vw;
+	width: 71.8vw;
+	height: 1.1vw;
+	background-color: #fff;
+}
+
+/*CHINA*/
+.types-best{
+	position: absolute;
+	top: 65vw;
+	left:29vw;
+	width: 26.4vw;
+	height: 11vw;
+	text-align: center;
+	line-height: 11vw;
+}
+.types-best span{
+	font-family: OswaldStencil;
+	font-size: 9.5vw;
+	color: #fff;
+}
+
+/**
+ *角色概括
+ *  
+ */
+
+.role {
+	width: 100%;
+	position: relative;
+	height: 66vw;
+	overflow: hidden;
+}
+
+.redTange-role {
+	width: 173.2vw;
+	height: 35vw;
+	right: -36.6vw;
+	top: 15vw;
+	background-color: #b0443e;
+	position: absolute;
+	transform: rotate(30deg);
+}
+
+.tittleBox {
+	transform: rotate(360deg);
+	width: 8vw;
+	height: 8vw;
+	position: absolute;
+	top: 4vw;
+	left: 4vw;
+	border-left: 0.2vw solid black;
+}
+
+.text-role {
+	font-family: adobe;
+	font-size: 3vw;
+	height: 100%;
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+.scrolling {
+	height: 100%;
+	width: 200%;
+	position: relative;
+	left: 10%;
+	transition: left 0.3s;
+	transition-timing-function: ease;
+	cursor: initial;
+}
+
+.tittleBox:hover .scrolling {
+	left: -110%;
+}
+
+.pictureShows {
+	width: 82vw;
+	height: 23.7vw;
+	position: absolute;
+	transform: rotate(360deg);
+	top: 22.7vw;
+	right: 10.7vw;
+}
+
+.pictureShowPosition {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.pictureShowItem {
+	float: left;
+	height: 21.7vw;
+	margin-left: 2.67vw;
+	text-align: center;
+	font-size: 2em;
+}
+
+.real {
+	display: block;
+}
+
+.none {
+	display: none;
+	;
+}
+
+.pictureShowItem img {
+	height: 21.7vw;
+	width: 15.1vw;
+	cursor: pointer;
+}
+
+.picShowBox{
+	width: 55vw;
+	height: 21.7vw;
+	margin-left: 15.2vw;
+}
+.pseudo {
+	height: 21.7vw;
+	width: 15.1vw;
+	border: snow solid 0.5vw;
+	font-family: 黑体;
+	font-size: 1em;
+	line-height: 21.7vw;
+	color: snow;
+	text-align: center;
+}
+
+.arrow-pictureShow{
+	position: absolute;
+	height: 21.7vw;
+	width: 15.1vw;
+	margin-left: 1.4vw;
+	overflow: hidden;
+	cursor: pointer;
+}
+.Left{
+	left: 0;
+}
+.Right{
+	right: 0;
+	top: 0;
+}
+.arrow-pictureShow img {
+	width: 15vw;
+	margin-top: 2.2vw;
+	margin-left: 1vw;
+}
+
+
+/**
+ *发展现状
+ *  
+ */
+
+.development {
+	width: 100%;
+	height: 65vw;
+	background-color: #c36c68;
+	position: relative;
+}
+
+.redTange-development {
+	position: absolute;
+	width: 100%;
+	height: 55vw;
+	left: 0;
+	bottom: 0;
+}
+
+.leftredTange-development {
+	float: left;
+	width: calc(100% - 50vw);
+	height: 100%;
+	background-color: #b73135;
+}
+
+.rightredTange-development {
+	float: left;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #B73135 #B73135;
+	border-width: 27.5vw 25vw;
+	width: 0;
+	height: 0;
+}
+
+.facialMakeup {
+	position: absolute;
+	left: 0;
+	top: 5vw;
+	width: 45vw;
+}
+
+.developText {
+	position: absolute;
+	top: -9vw;
+	right: 0vw;
+}
+
+.developText img {
+	width: 32vw;
+}
+
+.dramedevopment {
+	width: 50vw;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 5;
+	transition: width 1s;
+}
+
+.dramedevopment:hover {
+	width: 55vw;
+}
+
+.developmentText {
+	position: absolute;
+	width: 65vw;
+	height: 47vw;
+	bottom: 2vw;
+	left: 0vw;
+	border-color: black;
+	border-style: solid;
+	border-width: 1vw 1vw 1vw 0vw;
+}
+
+.deveplopment-position {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.developmentIntroduce {
+	position: absolute;
+	width: 50%;
+	font-family: 黑体;
+	font-size: 2.1vw;
+	top:5vw;
+	 left: 25%;
+}
+.tittlePostion{
+	position: absolute;
+	top: 25vw;
+	width: 50%;
+	left: 20%;
+	text-align: center;
+	line-height: 2.2vw;
+	font-family: abobe;
+	font-size: 2.2vw;
+}
+.tittle-dev{
+	padding: 0.6vw;
+	cursor: pointer;
+}
+.text-dev-position{
+	height: 100%;
+	position: absolute;
+	width: 80%;
+	background-color: #a7423d;
+	display: none;
+}
+.text-dev{
+	width: 80%;
+	height: 80%;
+	margin: 10%;
+	
+}
+.text-dev p{
+	margin: 0;
+	padding: 0;
+	font-size: 2.1vw;
+}
+.pic-dev{
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+}
+.pic-dev img{
+	width: 10vw;
+}
